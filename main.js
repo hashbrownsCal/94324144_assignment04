@@ -61,10 +61,10 @@ console.log(averageAge(10,21)); //for testing
 function leetSpeak(word) {
     for (let i=0; i<word.length; i++) {
         if (word[i] == 'e') {
-            word.replace(i,'3');
+            word = word.replace('e',3);
         }
         if (word[i] == 'a') {
-            word[i] = '4';
+            word = word.replace('a',4);
         } 
     }
     return (word);
